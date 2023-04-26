@@ -1,0 +1,582 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: rgb(250, 249, 246);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* End Reset */
+
+/* Home and menu */
+
+.home-content {
+  height: 100vh;
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.home-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: #45462a;
+}
+
+.home-text h1 {
+  font-size: 9rem;
+  font-weight: 700;
+}
+
+.home-text h4 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.login-btns {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-button {
+  width: 175px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  cursor: pointer;
+  border: 2px solid #45462a;
+  margin-right: 2rem;
+  color: #45462a;
+}
+
+.register-button {
+  width: 175px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  cursor: pointer;
+  border: 2px solid #45462a;
+  color: #45462a;
+}
+
+.sign-in-button:hover,
+.register-button:hover,
+.submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.down-arrow:hover {
+  outline: 2px solid #45462a;
+}
+
+.down-arrow i {
+  font-size: 2rem;
+  padding: 10px;
+
+  border-radius: 50%;
+  color: #45462a;
+  cursor: pointer;
+}
+
+.menu-button {
+  background-color: rgba(255, 255, 255, 0.233);
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 50%;
+  z-index: 5;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.menu-button button {
+  background-color: rgba(255, 255, 255, 0.233);
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.menu-button:hover {
+  outline: 2px solid #45462a;
+}
+
+.menu-button i {
+  font-size: 1rem;
+  color: black;
+  z-index: 2;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf9f6;
+  border-left: 5px solid #45462a;
+  box-sizing: border-box;
+  z-index: 4;
+}
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover {
+  color: #45462a;
+  text-decoration: underline;
+}
+
+/* About */
+.bg-video2 {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bold-text {
+  background-color: #45462a;
+  color: #faf9f6;
+  font-size: 700;
+}
+#about-content {
+  height: 100vh;
+}
+
+.about-title {
+  margin-top: 15rem;
+  margin-left: 6rem;
+  padding-top: 3rem;
+  font-size: 7rem;
+  color: #45462a;
+  font-weight: 700;
+}
+
+.about-text {
+  padding-top: 5rem;
+  margin-left: 4rem;
+  border-radius: 10px;
+  padding: 3rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.about-text h4 {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.down-arrow2 {
+  position: relative;
+  left: 50%;
+  bottom: 10%;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.down-arrow2:hover {
+  outline: 2px solid #45462a;
+}
+
+.down-arrow2 i {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  color: #45462a;
+  cursor: pointer;
+}
+
+/* My Daily Run */
+
+.subtext {
+  position: relative;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0rem 2rem 0 2rem;
+  line-height: 2rem;
+  z-index: -1;
+}
+
+.dr-title {
+  font-size: 9rem;
+  font-weight: 700;
+  margin-left: 6rem;
+  margin-top: 10rem;
+  padding-top: 6rem;
+  color: #45462a;
+}
+
+.dr-content h4 {
+  margin-left: 6rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  width: 80%;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.bg-video3 {
+  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.down-arrow3 {
+  position: relative;
+  margin-top: 5rem;
+  left: 50%;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.down-arrow3:hover {
+  outline: 2px solid #45462a;
+}
+
+.down-arrow3 i {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  color: #45462a;
+  cursor: pointer;
+}
+
+/* Register */
+
+.subtextt {
+  position: relative;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 8rem 10rem 0 10rem;
+  line-height: 2rem;
+  z-index: -1;
+}
+
+.bg-video4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+.register-title h1 {
+  font-size: 9rem;
+  font-weight: 700;
+  margin-left: 6rem;
+  margin-top: 10rem;
+  padding-top: 10rem;
+  color: #45462a;
+}
+
+.register-content h4 {
+  margin-left: 6rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  width: 80%;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.up-arrow {
+  position: relative;
+  left: 50%;
+  bottom: 10%;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.233);
+  transform: rotate(180deg);
+}
+
+.up-arrow:hover {
+  outline: 2px solid #45462a;
+}
+
+.up-arrow i {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  color: #45462a;
+  cursor: pointer;
+}
+
+.register-form {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+input {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  border: none;
+  border-radius: 25px;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-button {
+  width: 175px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  cursor: pointer;
+  border: 2px solid #45462a;
+  color: #45462a;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1600px) {
+  .bg-video {
+    width: 115%;
+  }
+
+  .subtext p,
+  .subtextt {
+    font-size: 0.8rem;
+    width: 95%;
+    padding: 0;
+    margin: 1rem;
+  }
+  .subtextt {
+    margin-top: 15rem;
+  }
+  .home-text h1 {
+    font-size: 5rem;
+  }
+
+  .home-text h4 {
+    font-size: 3rem;
+  }
+  .home-text {
+    top: 20%;
+  }
+
+  .about-title,
+  .dr-title,
+  .register-title h1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+
+  .about-text h4 {
+    font-size: 1rem;
+  }
+
+  .bg-video2 {
+    width: 115%;
+  }
+  .about-text {
+    margin: auto;
+    padding-top: 1rem;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  .about-text h4 {
+    margin-top: 1rem;
+  }
+  .dr-content h4 {
+    margin-left: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .register-title h1 {
+    padding-top: 3rem;
+  }
+  .register-content h4 {
+    margin-left: 1rem;
+  }
+  .register-form {
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  input {
+    margin-bottom: 2rem;
+  }
+}
