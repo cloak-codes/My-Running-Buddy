@@ -31,8 +31,8 @@ const parallax = () => {
   window.addEventListener("scroll", function () {
     const scrollPosition = window.pageYOffset;
 
-    homeText.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-    bgVideo.style.transform = "translateY(" + scrollPosition * 0.2 + "px)";
+    homeText.style.transform = "translateY(" + scrollPosition * 0.3 + "px)";
+    bgVideo.style.transform = "translateY(" + scrollPosition * 0.1 + "px)";
   });
 };
 

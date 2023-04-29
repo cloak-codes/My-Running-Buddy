@@ -107,6 +107,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: rgb(250, 249, 246);
+  width: 100%;
 }
 ol,
 ul {
@@ -181,12 +182,6 @@ table {
   font-size: 4rem;
 }
 
-.login-btns {
-  width: 375px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .sign-in-button {
   width: 175px;
   margin-top: 2rem;
@@ -219,6 +214,7 @@ table {
 .down-arrow {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 10%;
   background: none;
   border: none;
@@ -327,11 +323,12 @@ table {
 
 .about-text {
   padding-top: 5rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   border-radius: 10px;
   padding: 3rem;
   font-weight: 500;
   line-height: 2.5rem;
+  width: 90%;
 }
 
 .about-text h4 {
@@ -343,7 +340,8 @@ table {
 .down-arrow2 {
   position: relative;
   left: 50%;
-  bottom: 10%;
+  transform: translateX(-50%);
+  bottom: 0%;
   background: none;
   border: none;
   border-radius: 50%;
@@ -378,22 +376,25 @@ table {
   font-size: 9rem;
   font-weight: 700;
   margin-left: 6rem;
-  margin-top: 10rem;
-  padding-top: 6rem;
+  margin-top: 7rem;
+  padding-top: 3rem;
   color: #45462a;
+}
+
+.dr-content {
+  height: 100vh;
 }
 
 .dr-content h4 {
   margin-left: 6rem;
   font-size: 2rem;
   margin-top: 3rem;
-  width: 80%;
+  width: 90%;
   font-weight: 500;
   line-height: 2.5rem;
 }
 
 .bg-video3 {
-  margin-top: 3rem;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -404,8 +405,10 @@ table {
 
 .down-arrow3 {
   position: relative;
-  margin-top: 5rem;
+  bottom: 0;
   left: 50%;
+  margin-top: 10rem;
+  transform: translateX(-50%);
   background: none;
   border: none;
   border-radius: 50%;
@@ -428,10 +431,10 @@ table {
 
 .subtextt {
   position: relative;
-  margin-top: 10rem;
   text-align: center;
+  margin-top: 10rem;
   font-size: 1.2rem;
-  padding: 8rem 10rem 0 10rem;
+  padding: 0rem 10rem;
   line-height: 2rem;
   z-index: -1;
 }
@@ -453,7 +456,11 @@ table {
   color: #45462a;
 }
 
-.register-content h4 {
+.register-content {
+  height: 100vh;
+}
+
+.register-text h4 {
   margin-left: 6rem;
   font-size: 2rem;
   margin-top: 3rem;
@@ -464,7 +471,8 @@ table {
 .up-arrow {
   position: relative;
   left: 50%;
-  bottom: 10%;
+  transform: translateX(-50%);
+  margin-top: 5rem;
   background: none;
   border: none;
   border-radius: 50%;
@@ -510,25 +518,25 @@ input {
   color: #45462a;
 }
 
+.submit-button:hover {
+  background-color: #45462a;
+  color: white;
+  border: 2px solid white;
+}
+
 /* Mobile */
 
-@media screen and (max-width: 1600px) {
-  .bg-video {
-    width: 115%;
-  }
-
+@media screen and (max-width: 1500px) {
   .subtext p,
-  .subtextt {
-    font-size: 0.8rem;
+  .subtextt p {
+    font-size: 1rem;
     width: 95%;
     padding: 0;
     margin: 1rem;
   }
-  .subtextt {
-    margin-top: 15rem;
-  }
+
   .home-text h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .home-text h4 {
@@ -537,46 +545,180 @@ input {
   .home-text {
     top: 20%;
   }
+  .about-title {
+    font-size: 5rem;
+    margin-left: 3rem;
+  }
 
-  .about-title,
   .dr-title,
   .register-title h1 {
-    font-size: 4rem;
-    margin-left: 1rem;
+    font-size: 6rem;
+    margin-left: 3rem;
+  }
+
+  .about-text {
+    margin-left: 3rem;
+    padding: 0;
+    line-height: 3rem;
   }
 
   .about-text h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .down-arrow2 {
+    margin-top: 5rem;
   }
 
   .bg-video2 {
     width: 115%;
   }
-  .about-text {
-    margin: auto;
-    padding-top: 1rem;
+  .dr-text {
     padding: 0;
-    line-height: 1.5rem;
+    line-height: 3rem;
   }
-  .about-text h4 {
-    margin-top: 1rem;
+
+  .dr-text h4 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
   }
-  .dr-content h4 {
-    margin-left: 1rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
+
+  .down-arrow3 {
+    margin-top: 5rem;
   }
+
+  .register-content {
+    text-align: center;
+    width: 100%;
+  }
+
   .register-title h1 {
     padding-top: 3rem;
+    padding-top: 15rem;
+    font-size: 8rem;
   }
-  .register-content h4 {
-    margin-left: 1rem;
+  .register-text h4 {
+    margin-left: 3rem;
   }
   .register-form {
-    margin-left: 1rem;
+    margin-left: 3rem;
     margin-top: 2rem;
   }
   input {
     margin-bottom: 2rem;
+  }
+  .submit-button {
+    width: 20rem;
+  }
+  .up-arrow {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bg-video2,
+  .bg-video3,
+  .bg-video4 {
+    height: 110vh;
+  }
+  .subtext {
+    padding: 12rem 1rem 0 1rem;
+  }
+  .subtextt {
+    margin-top: 10rem;
+    padding: 15rem 1rem 0 1rem;
+  }
+  .about-text,
+  .dr-content {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .register-title h1 {
+    padding-top: 15rem;
+    margin-top: 15rem;
+    font-size: 7rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    .about-title,
+    .dr-title,
+    .register-title h1 {
+      font-size: 5rem;
+      margin-bottom: 6rem;
+    }
+
+    .bg-video2,
+    .bg-video3,
+    .bg-video4 {
+      height: 120vh;
+    }
+
+    .about-text h4,
+    .dr-text h4 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .bg-video2,
+    .bg-video3,
+    .bg-video4 {
+      height: 130vh;
+    }
+
+    .home-text {
+      top: 20%;
+      left: 0;
+    }
+    .home-text h1 {
+      font-size: 6rem;
+      position: relative;
+      top: 20%;
+      left: 5%;
+    }
+    .home-text h4 {
+      position: relative;
+      left: 5%;
+    }
+
+    .about-title,
+    .dr-title {
+      font-size: 4rem;
+    }
+
+    .login-btns {
+      width: 90%;
+      margin: auto;
+    }
+
+    .about-text h4,
+    .dr-text h4 {
+      line-height: 1.5;
+    }
+
+    .sign-in-button,
+    .register-button {
+      margin: 2rem 3rem 0 0;
+
+      width: 100%;
+      margin-right: 0;
+      padding: 1rem 0;
+    }
+    .home-content {
+      margin-left: 0;
+    }
+    .subtext {
+      margin-top: 20rem;
+    }
+    input {
+      width: 15rem;
+    }
+    .submit-button {
+      width: auto;
+      margin: auto;
+    }
   }
 }
