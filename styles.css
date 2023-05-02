@@ -334,7 +334,7 @@ table {
 .about-text h4 {
   padding: 1rem;
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .down-arrow2 {
@@ -452,7 +452,7 @@ table {
   font-weight: 700;
   margin-left: 6rem;
   margin-top: 10rem;
-  padding-top: 10rem;
+
   color: #45462a;
 }
 
@@ -559,16 +559,13 @@ input {
   .about-text {
     margin-left: 3rem;
     padding: 0;
-    line-height: 3rem;
+    
   }
 
   .about-text h4 {
     font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .down-arrow2 {
-    margin-top: 5rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
   }
 
   .bg-video2 {
@@ -576,12 +573,13 @@ input {
   }
   .dr-text {
     padding: 0;
-    line-height: 3rem;
+    
   }
 
   .dr-text h4 {
-    font-size: 2rem;
-    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
     margin-left: 3rem;
   }
 
@@ -596,7 +594,7 @@ input {
 
   .register-title h1 {
     padding-top: 3rem;
-    padding-top: 15rem;
+    padding-top: 3rem;
     font-size: 8rem;
   }
   .register-text h4 {
@@ -604,16 +602,17 @@ input {
   }
   .register-form {
     margin-left: 3rem;
-    margin-top: 2rem;
+   
   }
-  input {
-    margin-bottom: 2rem;
-  }
+.bg-video4 {
+  height: 120vh;
+}
+
   .submit-button {
     width: 20rem;
   }
   .up-arrow {
-    margin-top: 10rem;
+    margin-top: 3rem`;
   }
 }
 
@@ -722,3 +721,4 @@ input {
     }
   }
 }
+
